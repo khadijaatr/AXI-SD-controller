@@ -1,6 +1,4 @@
 # AXI-SD-controller
-Abstract
-
 This project focuses on the design and verification of an SD card controller for an external memory card, intended as part of a SoC environment for neural signal processing. 
 The main purpose of the controller is to enable the system to store and retrieve data through an external SD card, allowing recorded information to be preserved for later analysis.
 The broader target system is designed to support research in neural-level treatments by recording brain activity from laboratory mice under different stimulation conditions. In such a system, sampled neural data may be collected by dedicated acquisition blocks, stored temporarily in internal memory, and later transferred to an external SD card for documentation, analysis, and post-processing.
