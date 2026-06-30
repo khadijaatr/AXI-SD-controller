@@ -1,0 +1,44 @@
+Unloading SNPSLIC/base <aL>
+  Unloading dependent: FC/V-2023.12-SP3
+Loading PT/X-2025.06-SP2-1
+  ERROR: Module cannot be loaded due to a conflict.
+    HINT: Might try "module unload PT/W-2024.09-SP3" first.
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid re-execution or '-suppress=ASLR_DETECTED_INFO' to suppress this message.
+Chronologic VCS simulator copyright 1991-2025
+Contains Synopsys proprietary information.
+Compiler version X-2025.06-1_Full64; Runtime version X-2025.06-1_Full64;  Jun 27 21:13 2026
+
+ VCS Coverage Metrics Release X-2025.06-1_Full64 Copyright (c) 1991-2025 by Synopsys Inc.
+*Verdi* Loading libsscore_vcs202506.so
+FSDB Dumper for VCS, Release Verdi_X-2025.06-1, Linux x86_64/64bit, 07/19/2025
+(C) 1996 - 2025 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'novas.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+[2100] CARD: got CMD0 arg=0
+RESET done, STATUS = 0xxxxxxxxx
+[4860] CARD: got CMD24 arg=2
+[10780] CARD: stored block 2
+WRITE done, STATUS = 0xxxxxxxxx
+[13500] CARD: got CMD17 arg=2
+[19560] CARD: sent block 2
+READ done, STATUS = 0xxxxxxxxx
+
+expected: 10 11 12 13 14 15 16 17 18 19 1a 1b 1c 1d 1e 1f
+actual  : 10 11 12 13 14 15 16 17 18 19 1a 1b 1c 1d 1e 1f
+
+RESULT: PASS - AXI to SDIO transfer works
+$finish called from file "axi_sdio_tb.v", line 218.
+$finish at simulation time                20200
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitored
+---------------------------------------------------------------------------
+
+ Coverage status: End of All Coverages ...
+
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 20200
+CPU Time:      0.320 seconds;       Data structure size:   0.0Mb
+Sat Jun 27 21:13:02 2026
